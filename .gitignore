@@ -56,3 +56,10 @@ site/
 /wandb/
 /scratch/
 core
+
+hf_checkpoint_dir
+workspace
+sh
+data
+download
+logs

@@ -192,7 +192,7 @@ def write_model(
     if tmp_cleanup:
         # Make cleanup optional; attempting to `rmtree` the `tmp_model_path` causes
         # errors if using NFS.
-        shutil.rmtree(tmp_model_path)
+        shutil.rmtree(tmp_model_path, ignore_errors=True)
 
 
 def _write_tokenizer(
